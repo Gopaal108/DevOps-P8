@@ -53,13 +53,8 @@ jobs:
     - name: Bild container imag
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: devops-p8/tictactoe
-        registry: docker.pkg.github.com/jacekbro
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        tag_with_sha: true
-        username: ${{github.actor}}
-        password: ${{secrets.GUTHUB_TOKEN}}
         registry: docker.pkg.github.com
-        repository: Gopaal108/devops-p8/
+        repository: gopaal108/devops-p8/tictactoe
         tag_with_sha: true
